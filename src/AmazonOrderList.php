@@ -67,6 +67,7 @@ class AmazonOrderList extends AmazonOrderCore implements Iterator
                 foreach ($store[$s]['marketplaceId'] as $marketplace){
                     $name = 'MarketplaceId.Id.'.$key;
                     $this->options[$name] = $marketplace;
+                    $key++;
                 }
             }
             else {
